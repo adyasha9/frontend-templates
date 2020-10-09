@@ -5,15 +5,21 @@
     <title>theme2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--JQuery 3.2.1-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    -->
+    <!--
+
+    -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -23,23 +29,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script>
+
+    <!--<link rel="stylesheet" href="index.css">-->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+    <div id="topheader">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                        </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#home">home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#page1">page 1</a></li>
+                        <li><a href="#page2">page 2</a></li>
+                        <li><a href="#page3">page 3</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <!-- Navigation -->
     <section id="home" class="intro-section">
 
 
         <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+
 
         <div class="container">
-            <div class="topnav">
-                <a href="#home">Welcome</a>
-                <a href="#offers">Menu</a>
-                <a href="#gallery">Events</a>
-                <a href="#contact">Contact</a>
+            <div class=" row ro1">
+
             </div>
         </div>
         <!-- /.navbar-collapse -->
@@ -48,11 +82,12 @@
 
 
         <!-- Intro Section -->
-        <div class="container ">
-            <div class="row ">
+        <div class="container" id="sub-intro">
+            <div class="row">
 
-
-                <div class="intro col-sm-6">
+                <div class="col-sm-12 col-md-8 col-lg-8" style="height: 150px;"></div>
+                <div class="intro col-12 col-sm-12 col-md-4 col-lg-4 align-items-center mx-auto">
+                    <br><br>
                     <h2><b>New Opening</b></h2>
                     <h1>23rd September
                     </h1>
@@ -68,46 +103,48 @@
     <section id="about" class="about-section">
         <div class="container ">
             <div class="row ">
-                <div class="col-sm-6 ">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                     <h2>What do we cook?</h2>
-                    <p style="color:rgb(153, 147, 147);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</p>
+                    <p style="color:rgb(153, 147, 147);">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</p>
                 </div>
-                <div class="col-sm-6">
-                    <img class="ab" src="a.png" /> </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 pr-0">
+                    <img class="ab" src="a.png" />
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Menus Section -->
-    <section id="menus" class="menus-section ">
+    <section id="menus" class="menus-section container-fluid">
 
-        <div class="col-sm-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
             <div style="text-align:center">
                 <span class="dot"></span>
             </div>
-            <h4>New tastes</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
+            <h4 class=" text-center">New tastes</h4>
+            <p class=" text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</p>
         </div>
-        <div class="col-sm-4 ">
+        <div class="col-sm-12 col-md-6 col-lg-4 ">
             <div style="text-align:center">
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <h4>New dishes</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
+            <h4 class=" text-center">New dishes</h4>
+            <p class=" text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</p>
         </div>
 
-        <div class="col-sm-4 ">
+        <div class="col-sm-12 col-md-12 col-lg-4 ">
             <div style="text-align:center">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </div>
-            <h4>New restraunt</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
+            <h4 class=" text-center">New restraunt</h4>
+            <p class=" text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</p>
         </div>
 
@@ -115,123 +152,136 @@
 
     <!-- offers Section -->
     <section id="offers" class="offers-section ">
-        <div class="text-block">
-            <div class="grid">
+        <div class="text-block justify-content-center d-flex">
+            <div class="grid col-sm-10 mx-auto" id="tradition">
 
-                <h2>We bring Tradition</h2>
-                <h3>To Your Plate</h3>
+                <h2 class="text-center ">We bring Tradition</h2>
+                <h3 class=" text-center ">To Your Plate</h3>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="a.jpg" width="280px" height="200px" /></div>
-                    <div class=" col-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
-                    <div class="col-md-3 ">
-                        <img src="a.jpg" width="280px" height="200px" /></div>
-                    <div class=" col-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <img src="a.jpg " width="280px " height="200px " class="rounded mx-auto d-block img-fluid m-3 " /></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pt-3 pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
+                    <hr class="d-block d-sm-block d-md-none">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <img src="a.jpg " width="280px " height="200px " class="rounded mx-auto d-block img-fluid m-3 " /></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3  pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
                 </div>
-                <div class="row">
+                <hr class="d-block d-sm-block d-md-none">
+                <div class="row ">
 
-                    <div class=" col-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
-                    <div class="col-md-3">
-                        <img src="a.jpg" width="280px" height="200px" /></div>
-
-                    <div class=" col-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
-                    <div class="col-md-3 ">
-                        <img src="a.jpg" width="257px" height="200px" /></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3  pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <img src="a.jpg " width="280px " height="200px " class="rounded mx-auto d-block img-fluid m-3 " /></div>
+                    <hr class="d-block d-sm-block d-md-none">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3  pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <img src="a.jpg " width="280px " height="200px " class="rounded mx-auto d-block img-fluid m-3 " /></div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="a.jpg" width="280px" height="200px" /></div>
-                    <div class=" col-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
-                    <div class="col-md-3 ">
-                        <img src="a.jpg" width="280px" height="200px" /></div>
-                    <div class=" col-md-3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
+                <hr class="d-block d-sm-block d-md-none">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <img src="a.jpg " width="280px " height="200px " class="rounded mx-auto d-block img-fluid m-3 " /></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3  pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
+                    <hr class="d-block d-sm-block d-md-none">
+                    <div class="col-lg-3 col-md-6 col-sm-12  pb-3">
+                        <img src="a.jpg " width="280px " height="200px " class="rounded mx-auto d-block img-fluid m-3 " /></div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-3  pb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut consequat sem vel gravida scelerisque.</div>
                 </div>
             </div>
         </div>
     </section>
     <!-- gallery Section -->
-    <section id="gallery" class="gallery-section ">
-        <div class="gal ">
-            <h3>We like to keep things simple</h3>
+    <section id="gallery " class="gallery-section ">
+        <div class="gal col-12 ">
+            <h3 class=" text-center ">We like to keep things simple</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</p>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-
-        </div>
-
-
-        <div class="lle ">
-            <h2>Discover </h2>
-            <h3>Our New Menu</h3>
-            <div class="row ">
-                <div class="col-md-6 ">
-
-
-
-                    <p style="float: left; ">
-                        <img class="jap " src=" nigiri.png " />
-                        <h4>Nigiri</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
-                        </p>
-                    </p>
-                    <p style="float: left; ">
-                        <img class="jap " src=" onigiri.png " />
-                        <h4>Nigiri</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
-                        </p>
-                    </p>
-
-
-
-
-                </div>
-                <div class=" col-md-6 ">
-                    <p style="float: left; ">
-                        <img class="jap " src=" su.png " />
-                        <h4>Nigiri</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
-                        </p>
-                    </p>
-                    <p style="float: left; ">
-                        <img class="jap " src=" sushi.png " />
-                        <h4>Nigiri</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
-                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
-                        </p>
-                    </p>
-
-
-
-                </div>
+            <div style="text-align:center ">
+                <span class="dot "></span>
+                <span class="dot "></span>
+                <span class="dot "></span>
             </div>
         </div>
+        <div id="galbg" class=" col-12"></div>
+
+
+        <div class="lle col-12 ">
+            <h2 class=" text-center ">Discover </h2>
+            <h3 class=" text-center ">Our New Menu</h3>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-sm-12 ">
+                    <div class=" col-lg-5 col-12 float-left">
+                        <img class="jap" src=" nigiri.png " style="height: 100px;width: 100px; " />
+                    </div>
+                    <div class=" col-lg-7 col-12 float-left">
+                        <h4>Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <div class=" col-lg-5 col-12 float-left align-self-center align-content-center">
+                        <img class="jap" src=" onigiri.png " style="height: 100px;width: 100px; " />
+                    </div>
+                    <div class=" col-lg-7 col-12 float-left">
+                        <h4>Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
+                        </p>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-sm-12 ">
+                    <div class=" col-lg-5 col-12 float-left">
+                        <img class="jap " src=" su.png " style="height: 100px;width: 100px; " />
+                    </div>
+                    <div class=" col-lg-7 col-12 float-left">
+                        <h4>Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 ">
+                    <div class=" col-lg-5 col-12 float-left">
+                        <img class="jap " src=" sushi.png " style="height: 100px;width: 100px; " />
+                    </div>
+                    <div class=" col-lg-7 col-12 float-left">
+                        <h4>Nigiri</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="galbg" class=" col-12"></div>
     </section>
     <!-- Contact Section -->
-    <section id="contact" class="contact-section ">
-        <div class="ga ">
-            <h2>Book here</h2>
+    <section id="contact " class="contact-section ">
+        <div class="ga col-12 ">
+            <h2 class=" text-center ">Book here</h2>
             <div class="row ">
                 <div class="col-md-4 ">
                     <p>How many people?</p>
                     <form>
                         <select>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3 or more">3 or more</option>
+                 <option value="1 ">1</option>
+                 <option value="2 ">2</option>
+                 <option value="3 or more ">3 or more</option>
                  </select>
 
                         <p>Name</p>
@@ -241,7 +291,7 @@
                 <div class="col-md-4 ">
                     <form>
                         <p>Date</p>
-                        <input type="date">
+                        <input type="date ">
                         <p>Name</p>
 
                         <textarea></textarea>
@@ -253,7 +303,7 @@
                 <div class="col-md-4 ">
                     <form>
                         <p>Time</p>
-                        <input type="time">
+                        <input type="time ">
                         <p>Phone</p>
 
                         <textarea></textarea>
@@ -269,107 +319,96 @@
 
     </section>
     <!-- card Section -->
-    <section id="card" class="card-section ">
+    <section id="card " class="card-section col-sm-12 ">
         <h2>Discover</h2>
         <h3 style="color:white; ">Our New Menu</h3>
         <div class="container ">
-            <div class="row hidden-md-up ">
-                <div class="col-md-4 ">
-                    <div class="card ">
+            <div class="row hidden-md-up align-items-center">
+                <div class="col-md-6 col-lg-4 col-12">
+                    <div class="card mx-auto">
                         <div class="card-block ">
                             <img class="d-flex mr-3 img-thumbnail align-self-center img-fluid " src="a.jpg " width="300px ">
                             <h4 class=" card-title ">Sushi/10th March 2019</h4>
-
-
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="card ">
+                <div class="col-md-6 col-lg-4 col-12">
+                    <div class="card mx-auto">
                         <div class="card-block ">
                             <img class="d-flex mr-3 img-thumbnail align-self-center " src="a.jpg " width="300px ">
                             <h4 class="card-title ">Sushi/10th March 2019</h4>
-
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="card ">
+                <div class="col-md-12 col-lg-4 col-12 align-items-center">
+                    <div class="card mx-auto">
                         <div class="card-block ">
                             <img class="d-flex mr-3 img-thumbnail align-self-center " src="a.jpg " alt="food " width="300px ">
                             <h4 class="card-title ">Sushi/10th March 2019</h4>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
     </section>
-
-
-
     <!-- blog Section -->
-    <section id="last" class="last-section ">
+    <section id="last" class="last-section container-fluid">
         <div class="row justify-content-center ">
-            <div class="col-auto ">
+            <div class="col-12">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing eli.</p>
 
             </div>
         </div>
-        <h2>Linda Stewart</h2>
-        <a class="btn btn-social-icon btn-google " href="http://google.com/+ "><i class="fa fa-google-plus "></i></a>
-        <a class="btn btn-social-icon btn-facebook " href="http://www.facebook.com/profile.php?id="><i
-class=" fa fa-facebook "></i></a>
-        <a class="btn btn-social-icon btn-linkedin " href="http://www.linkedin.com/in/ "><i class="fa fa-linkedin "></i></a>
-        <a class="btn btn-social-icon btn-twitter " href="http://twitter.com/ "><i class="fa fa-twitter "></i></a>
-        <a class="btn btn-social-icon btn-google " href="http://youtube.com/ "><i class="fa fa-youtube "></i></a>
-        <a class="btn btn-social-icon " href="mailto: "><i class="fa fa-envelope-o "></i></a>
 
+        <div class="col-12 pb-5">
+            <h2 class=" text-center ">Linda Stewart</h2>
+            <a class="btn btn-social-icon btn-google " href="http://google.com/+ "><i class="fa fa1 fa-google-plus "></i></a>
+            <a class="btn btn-social-icon btn-facebook " href="http://www.facebook.com/profile.php?id="><i class=" fa fa1 fa-facebook "></i></a>
+            <a class="btn btn-social-icon btn-linkedin " href="http://www.linkedin.com/in/ "><i class="fa fa1 fa-linkedin "></i></a>
+            <a class="btn btn-social-icon btn-twitter " href="http://twitter.com/ "><i class="fa fa1 fa-twitter "></i></a>
+            <a class="btn btn-social-icon btn-google " href="http://youtube.com/ "><i class="fa fa1 fa-youtube "></i></a>
+            <a class="btn btn-social-icon " href="mailto: "><i class="fa fa1 fa-envelope-o "></i></a>
+        </div>
         <footer class="footer ">
             <div class="container ">
                 <div class="row ">
-                    <div style="align-content:left; " class=" col-md-6 ">
-                        <h4>About Us</h4>
+                    <div class="col-12 col-md-12 col-lg-6 ">
+                        <h4><b>About Us</b></h4>
                         <address>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id commodo risus, sed lacinia risus. Aenean commodo convallis tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor
                          sit amet, consectetur adipiscing elit. Ut consequat sem vel gravida scelerisque.</address>
                     </div>
-                    <div clas="col-md-3 ">
-                        <ul style="list-style:none; padding-left:100px; ">
+                    <div class="col-4 col-lg-2 align-content-center">
+                        <br><br>
+                        <ul style="list-style:none;" class="m-0 pl-0">
                             <li>Team</li>
                             <li>Join Us</li>
                             <li>Ethic</li>
                             <li>Goals</li>
                         </ul>
                     </div>
-                    <div clas="col-md-3 ">
-                        <ul style="list-style:none; padding-left:100px; ">
+                    <div class="col-4 col-lg-2 align-content-center">
+                        <br><br>
+                        <ul style="list-style:none;" class="m-0 pl-0">
                             <li>Team</li>
                             <li>Join Us</li>
                             <li>Ethic</li>
                             <li>Goals</li>
                         </ul>
                     </div>
-                    <div clas="col-md-3 ">
-                        <ul style="list-style:none; padding-left:100px; ">
+                    <div class="col-4 col-lg-2 align-content-center">
+                        <br><br>
+                        <ul style="list-style:none; align-content: center; " class="m-0 pl-0">
                             <li>Team</li>
                             <li>Join Us</li>
                             <li>Ethic</li>
                             <li>Goals</li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </footer>
-
     </section>
-
-
 </body>
 
 </html>

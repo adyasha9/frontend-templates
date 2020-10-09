@@ -8,12 +8,6 @@ html {
     height: 100%;
 }
 
-.navbar-transparent {
-    background-color: transparent;
-    background: transparent;
-    border-color: transparent;
-}
-
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -31,6 +25,9 @@ html {
     text-align: left;
     background: url(bg.jpg);
     color: rgb(31, 126, 39);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .intro {
@@ -62,14 +59,6 @@ html {
     background-color: rgb(63, 110, 73);
     padding-top: 100px;
     color: #ddd;
-}
-
-.offers-section {
-    height: 140%;
-    padding-top: 100px;
-    background: rgb(26, 26, 27);
-    color: rgb(95, 105, 86);
-    text-align: center;
 }
 
 .gallery-section {
