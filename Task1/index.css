@@ -1,6 +1,7 @@
     body {
         width: 100%;
         height: 100%;
+        box-sizing: border-box;
     }
     
     html {
@@ -28,56 +29,73 @@
     /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
 of those sections to manage the look and feel of the site. */
+    /*****************INTRO-SECTION********************/
+    
+    #navlg a {
+        font-size: 17px;
+        color: rgb(224, 210, 13) !important;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+    .naval {
+        z-index: 3;
+        text-align: center;
+    }
+    
+    .naval a {
+        float: right;
+        margin: auto;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        padding-left: 2rem;
+        text-decoration: none;
+        font-size: 2rem;
+        color: rgb(224, 210, 13) !important;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 2rem;
+    }
+    /* Change the color of links on hover */
+    
+    .naval a:hover {
+        border-radius: 8px;
+        color: black;
+    }
+    
+    .responsive {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Hide the link that should open and close the naval on small screens */
+    
+    .naval .icon {
+        display: none;
+    }
     
     .intro-section {
         height: 100%;
         padding-top: 50px;
+        padding-bottom: 20px;
         text-align: left;
         background: url(bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         color: white;
     }
     
-    .about-section {
-        height: 100%;
-        padding-top: 150px;
-        text-align: left;
-        background: rgb(22, 24, 32);
-        color: rgb(247, 192, 11);
+    .logo {
+        width: 70px;
+        height: 70px;
+        margin: auto;
+        display: inline;
     }
     
-    .menus-section {
-        height: 100%;
-        text-align: center;
-        background-color: rgb(247, 192, 11);
-    }
-    
-    .offers-section {
-        height: 100%;
-        padding-top: 50px;
-        text-align: center;
-        background: rgb(22, 24, 32);
-        color: rgb(247, 192, 11);
-    }
-    
-    .gallery-section {
-        height: 100%;
-        padding-top: 150px;
-        text-align: center;
-        background: url(bg.jpg) no-repeat;
-    }
-    
-    .contact-section {
-        height: 100%;
-        padding-top: 80px;
-        text-align: center;
-        background: rgb(22, 24, 32);
-    }
-    
-    .blog-section {
-        height: 100%;
-        padding-top: 50px;
-        text-align: left;
-        background-color: rgb(247, 192, 11);
+    .logox {
+        margin: auto;
+        width: 70px;
+        height: 70px;
     }
     
     .bt {
@@ -85,6 +103,12 @@ of those sections to manage the look and feel of the site. */
         padding: 10px 20px;
         border: 0px;
         color: black;
+    }
+    
+    .b {
+        margin-top: 4rem;
+        color: rgb(247, 192, 11);
+        font-style: 'Open Sans', sans-serif, bold;
     }
     
     .topnav a {
@@ -100,6 +124,134 @@ of those sections to manage the look and feel of the site. */
         background-color: #ddd;
         color: black;
     }
+    
+    .icon :hover {
+        background-color: #fffffff;
+    }
+    /*****************ABOUT-SECTION********************/
+    
+    .about-section {
+        height: 100%;
+        padding-top: 150px;
+        text-align: left;
+        background: rgb(22, 24, 32);
+        color: rgb(247, 192, 11);
+    }
+    /*****************MENU-SECTION********************/
+    
+    .menus-section {
+        height: fit-content;
+        text-align: center;
+        background-color: rgb(247, 192, 11);
+    }
+    /*Components of menu-section*/
+    
+    .pl {
+        height: 410px;
+        height: inherit;
+        max-height: 100%;
+    }
+    
+    .r {
+        height: 200px;
+    }
+    
+    .at {
+        max-height: 100%;
+        height: 410px;
+        margin-right: -50px;
+    }
+    
+    #at {
+        max-height: 100%;
+        margin-right: -17px;
+    }
+    
+    #boxer {
+        padding-left: 0%;
+        border-color: #161820;
+        border-radius: 3rem;
+    }
+    /*****************OFFERS-SECTION********************/
+    
+    .offers-section {
+        height: fit-content;
+        padding-top: 50px;
+        text-align: center;
+        background: rgb(22, 24, 32);
+        color: rgb(247, 192, 11);
+    }
+    /*****************GALLERY-SECTION********************/
+    
+    .gallery-section {
+        height: fit-content;
+        text-align: center;
+        background: url(bg.jpg) no-repeat;
+    }
+    /*Components of gallery-section*/
+    
+    .text-block {
+        position: relative;
+        width: 50%;
+        background-color: rgb(22, 24, 32);
+        color: white;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border: 5px solid rgb(247, 192, 11);
+    }
+    /*****************CONTACT-SECTION********************/
+    
+    .contact-section {
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        background: rgb(22, 24, 32);
+    }
+    /*****************BLOG-SECTION********************/
+    
+    .blog-section {
+        height: fit-content;
+        padding-top: 50px;
+        text-align: left;
+        background-color: rgb(247, 192, 11);
+    }
+    /*****************FOOTER********************/
+    
+    footer {
+        overflow-x: hidden;
+        padding: 1rem 0;
+        background: rgb(62, 62, 63);
+        text-align: center;
+        color: white;
+        height: fit-content;
+    }
+    
+    .sp {
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .footer-element {
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+    }
+    /*****************ICONS********************/
+    
+    .fa {
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 20px;
+        text-align: center;
+        margin: 2px 2px;
+        background-color: white;
+        color: black;
+    }
+    /*****************COMMON COMPONENTS********************/
     
     .row {
         display: flex;
@@ -119,84 +271,6 @@ of those sections to manage the look and feel of the site. */
         width: 100%;
     }
     
-    .text-block {
-        position: relative;
-        width: 50%;
-        bottom: 30px;
-        left: 200px;
-        background-color: rgb(22, 24, 32);
-        color: white;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        border: 5px solid rgb(247, 192, 11);
-    }
-    
-    footer {
-        padding: 1rem 0;
-        background: rgb(62, 62, 63);
-        text-align: center;
-        color: white;
-    }
-    
-    .navbar-right {
-        float: right;
-    }
-    
-    .b {
-        color: rgb(247, 192, 11);
-        font-style: 'Open Sans', sans-serif, bold;
-    }
-    
     .col-sm-6 {
         padding-top: 70px;
-    }
-    
-    .logo {
-        width: 70px;
-        height: 70px;
-        position: relative;
-        left: 170px;
-    }
-    
-    .footer-element {
-        text-align: center;
-        padding: 14px 16px;
-        font-size: 17px;
-    }
-    
-    .fa {
-        border-radius: 50%;
-        border: 1px solid white;
-        padding: 20px;
-        text-align: center;
-        margin: 2px 2px;
-        background-color: white;
-        color: black;
-    }
-    
-    .sp {
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .at {
-        position: relative;
-        left: 280px;
-        height: 400px;
-    }
-    
-    .pl {
-        position: relative;
-        left: -450px;
-        height: 410px;
-    }
-    
-    .r {
-        position: relative;
-        left: 400px;
-        height: 200px;
-        width: 200px;
     }
