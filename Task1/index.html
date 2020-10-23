@@ -5,7 +5,6 @@
     <title>theme1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -22,46 +21,59 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
     <section id="home" class="intro-section">
-
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-
-        <div class="container">
-            <div class="topnav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Menu</a>
-                <a href="#menus">Offers</a>
-                <img src="logo.jpg" class="logo" />
-                <a class=" navbar-right " href=" #offers">Gallery</a>
-                <a class="navbar-right " href="#blog">Contact</a>
-                <a class="navbar-right " href="#gallery">Blog</a>
-
+        <div class=" container-fluid" id="navlg">
+            <div class=" row justify-content-center">
+                <div class=" col-6 p-0 justify-content-center text-center">
+                    <a href="#home" class="col-3 m-auto">Home</a>
+                    <a href="#about" class=" col-3 m-auto">About</a>
+                    <a href="#contact" class=" col-3 m-auto">Menu</a>
+                    <a href="#menus" class=" col-3 m-auto">Offers</a>
+                </div>
+                <div class=" col-1 p-0 justify-content-center text-center">
+                    <img src="logo.jpg" class="logox m-auto" />
+                </div>
+                <div class=" col-5 justify-content-center text-center">
+                    <a href=" #offers" class="col-4">Gallery</a>
+                    <a href="#blog" class="col-4">Contact</a>
+                    <a href="#gallery" class="col-4">Blog</a>
+                </div>
 
             </div>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="naval m-auto align-items-center text-center" id="myTopnav">
+            <a href="index.html"><img src="logo.jpg" class="logo" /></a>
+            <a href="#about" class="left">About</a>
+            <a href="#contact" class="left">Menu</a>
+            <a href="#menus" class="left">Offers</a>
+            <a class=" navbar-right " href=" #offers">Gallery</a>
+            <a class="navbar-right " href="#blog">Contact</a>
+            <a class="navbar-right " href="#gallery">Blog</a>
+            <a href="javascript:void(0);" class="icon text-left" onclick="myFunction()" id="but">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <!-- /.navbar-collapse -->
-
-        <!-- /.container -->
-
-
         <!-- Intro Section -->
         <div class="container ">
             <div class="row ">
-                <div class="col-sm-6 ">
-                    <img src="h.png " width="500px " height="450px " />
+                <div class="col-sm-12 col-md-6 col-lg-6 ml-auto d-flex align-items-center mt-4 ">
+                    <img src="h.png " class="w-75 mx-auto" />
                 </div>
-                <div class=" col-sm-6 ">
+                <div class=" col-sm-12 col-md-6 col-lg-6">
                     <h1 class="b "><b>Contact Us For Best BreakFast</b></h1>
-                    <p style="align-items:left; font-size: large; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus ultricies
-                        ipsum ac mollis.
+                    <p style="align-items:left; font-size: large; ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus ultricies ipsum ac mollis.
                     </p>
                     <a href="#blog"> <button class="bt ">Contact Us</button></a>
                 </div>
@@ -73,12 +85,12 @@
     <section id="about" class="about-section">
         <div class="container ">
             <div class="row ">
-                <div class="col-sm-6 ">
-                    <img src="about.jpg " width="500px " height="450px " />
+                <div class="col-sm-12 col-md-6  col-lg-6  ml-auto d-flex align-items-center mt-4 ">
+                    <img src="about.jpg " width="90%" />
                 </div>
-                <div class=" col-sm-6 ">
+                <div class="col-sm-12 col-md-6 col-lg-6 ">
                     <h2>About Us</h2>
-                    <p style="align-items: left; font-size: large; "><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus
+                    <p style=" font-size: large; "><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus
                         ultricies ipsum ac mollis. Suspendisse elementum urna sit amet erat vulputate, interdum auctor sem ultricies. Integer fringilla elementum velit sit amet congue. In nec nulla lectus. Integer eget diam efficitur, sagittis dolor ac,
                         ullamcorper ante. Proin posuere id enim id imperdiet.</b></p>
                 </div>
@@ -92,17 +104,25 @@
 
         <div class="container ">
             <div class="row ">
-                <div class="r">
-                    <h2>Our Food Quality</h2>
-                    <p style="align-items: left; "><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus
-                  ultricies ipsum ac mollis. Suspendisse elementum urna sit amet erat vulputate, interdum auctor sem ultricies.</b></p>
+                <div class="pl col-lg-5 col-12">
+                    <img class=" img-responsive m-auto" src=" pl.png " />
+                </div>
+                <div class="col-lg-7 col-12" id="boxer">
+                    <div class="r w-50 float-left">
+                        <h2 class=" text-center">Our Food Quality</h2>
+                        <p class=" text-center">
+                            <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus
+                                ultricies ipsum ac mollis. Suspendisse elementum urna sit amet erat vulputate, interdum auctor sem ultricies.</b>
+                        </p>
+                    </div>
+
+                    <div class="at w-50 text-right float-left">
+                        <img id="at" class=" img-fluid" src=" at.png " />
+                    </div>
                 </div>
 
-                <img class="pl" src=" pl.png " />
-
-
-
-                <img class="at" src=" at.png " /></div>
+            </div>
+        </div>
         </div>
         <div style="height: 150px; overflow: hidden; "><svg viewBox="0 0 500 150 " preserveAspectRatio="none " style="height: 100%; width: 100%; "><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 523.93,142.40 L500.00,150.00 L0.00,150.00 Z
                         " style="stroke: none; fill: rgb(22, 24, 32); "></path></svg></div>
@@ -111,23 +131,27 @@
     <!-- offers Section -->
     <section id="offers" class="offers-section ">
         <h2>Our Food Gallery</h2>
-        <div class="container ">
+        <div class="container mt-5">
             <div class="row ">
             </div>
             <div class="row ">
 
-                <div class="col ">
+                <div class="col-lg-4 col-md-6 col-12 pb-5">
                     <img src="a.jpg " style="height:250px;width:250px; ">
-                    <img src="b.jpg " style="height:250px;width:250px; ">
-
-
                 </div>
-                <div class="col ">
+                <div class="col-lg-4 col-md-6 col-12 pb-5 ">
+                    <img src="b.jpg " style="height:250px;width:250px; ">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5 ">
                     <img src="c.jpg " style="height:250px;width:250px; ">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5 ">
                     <img src="d.jpg " style="height:250px;width:250px; ">
                 </div>
-                <div class="col ">
+                <div class="col-lg-4 col-md-6 col-12 pb-5 ">
                     <img src="e.jpg " style="height:250px;width:250px; ">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 pb-5 ">
                     <img src="f.jpg " style="height:250px;width:250px; ">
 
                 </div>
@@ -138,8 +162,8 @@
     <section id="gallery" class="gallery-section ">
         <div class="container ">
             <div class="row ">
-                <div class="col-lg-12 ">
-                    <div class="text-block ">
+                <div class="col-lg-12 p-4">
+                    <div class="text-block m-auto">
                         <h4>Enjoy Your Food</h4>
                         <p style="align-items: center; font-size: large; padding:20px 20px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus
                             ultricies ipsum ac mollis. Suspendisse elementum urna sit amet erat vulputate, interdum auctor sem ultricies. Integer fringilla elementum velit sit amet congue. In nec nulla lectus. Integer eget diam efficitur, sagittis dolor
@@ -156,19 +180,19 @@
         <div class="container ">
             <div class="row ">
 
-                <div class="col "> <img src="a.jpg " width="300 " height="300 " alt=" " />
+                <div class="col-12 col-md-6 col-lg-4"> <img src="a.jpg " width="300 " height="300 " alt=" " />
                     <h3 style="color: goldenrod; ">Pancakes & Blueberry</h3>
                     <p style="color: honeydew; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus ultricies
                         ipsum ac mollis.</p>
                     <subtitle style="color: goldenrod; ">Price: $11.29</subtitle>
                 </div>
-                <div class="col "> <img src="b.jpg " width="300 " height="300 " alt=" " />
+                <div class="col-12 col-md-6 col-lg-4"> <img src="b.jpg " width="300 " height="300 " alt=" " />
                     <h3 style="color: goldenrod; ">Pancakes & Blueberry</h3>
                     <p style="color: honeydew; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus ultricies
                         ipsum ac mollis.</p>
                     <subtitle style="color: goldenrod; ">Price: $11.29</subtitle>
                 </div>
-                <div class="col "> <img src="c.jpg " width="300 " height="300 " alt=" " />
+                <div class="col-12 col-md-12 col-lg-4"> <img src="c.jpg " width="300 " height="300 " alt=" " />
                     <h3 style="color: goldenrod; ">Pancakes & Blueberry</h3>
                     <p style="color: honeydew; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus ultricies
                         ipsum ac mollis.</p>
@@ -183,10 +207,10 @@
     <section id="blog" class="blog-section ">
         <div class="container ">
             <div class="row ">
-                <div class="col-sm-6 ">
-                    <img src="i.png " />
+                <div class="col-12 col-md-6 ">
+                    <img src="i.png " class=" w-100" />
                 </div>
-                <div class=" col-sm-6 ">
+                <div class="col-12 col-md-6">
                     <h1>Enjoy Your Food</h1>
                     <p style="align-items: left; font-size: large; "><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices hendrerit egestas. Vivamus sem justo, sodales non sodales in, rhoncus a dui. Mauris porta tempor massa, interdum pharetra leo blandit ut. Integer luctus
                   ultricies ipsum ac mollis. Suspendisse elementum urna sit amet erat vulputate, interdum auctor sem ultricies. Integer fringilla elementum velit sit amet congue. In nec nulla lectus. Integer eget diam efficitur, sagittis dolor ac,
@@ -221,6 +245,7 @@
         </footer>
     </section>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
